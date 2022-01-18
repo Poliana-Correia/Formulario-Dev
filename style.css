@@ -1,0 +1,62 @@
+* {
+    outline: 1px solid red;
+    margin:0;
+    color: white;
+}
+
+body {
+    background-image: url(/imagens/fundonot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+h1 {
+    text-align: center;
+
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.frase1 {
+    text-align: right;
+
+    padding: 2rem;
+    
+}
+
+.frase2 {
+    text-align: right;
+
+    margin-top: 5rem;
+    margin-right: 8rem;
+}
+
+
+a {
+    color: rgb(240, 25, 240);
+    text-decoration: none;
+
+}
+
+.link {
+    text-align: right;
+
+    margin-top: 5rem;
+    margin-right: 12rem;
+    margin-bottom: 6rem;
+
+}
+
+a:hover {
+    color: rgb(238, 132, 220);
+}
+
+footer {
+    text-align: center;
+
+    padding: 4rem 0 4rem;
+    
+    
+}
+
