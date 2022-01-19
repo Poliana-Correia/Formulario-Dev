@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Mitr:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap');
+
+
+/* Responsive -------------- 
+@media (min-width: 800px){
+    html {
+        font-size: 100%;
+    }
+} 
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}*/
+
+
+:root {
+    --font1: 'Kanit', sans-serif;
+    --font2: 'Courgette', cursive;
+    --font3: 'Hind Vadodara', sans-serif;
+}
+
 * {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
     margin:0;
-    color: white;
 }
 
 body {
@@ -12,51 +35,180 @@ body {
 }
 
 h1 {
+    color: white;
     text-align: center;
+    font-family: var(--font1);
 
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
 .frase1 {
+    font-family: var(--font2);
     text-align: right;
+    color: white;
 
     padding: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+
+    margin-bottom: 4rem;
     
 }
 
 .frase2 {
+    font-family: var(--font3);
     text-align: right;
+    color: white;
 
-    margin-top: 5rem;
-    margin-right: 8rem;
+    font-size: 1.5rem;
+
+    margin-right: 2rem ;
+    margin-bottom: 2rem;
+}
+
+.linha2 {
+    font-size: 0.8rem;
+    
 }
 
 
 a {
-    color: rgb(240, 25, 240);
+    color: rgb(250, 243, 249);
     text-decoration: none;
 
+    font-size: 1.5rem;
+    font-family: var(--font1);
 }
 
 .link {
     text-align: right;
 
-    margin-top: 5rem;
-    margin-right: 12rem;
-    margin-bottom: 6rem;
-
+    margin-right: 2rem;
+    margin-bottom: 8rem;
 }
 
 a:hover {
-    color: rgb(238, 132, 220);
+    color: rgb(223, 199, 219);
 }
 
-footer {
+a.footer {
+    color: white;
+    font-size: 1rem;
+    font-family: var(--font3);
+
+    display: flex; 
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* Modal e formulario */
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.6);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+
+    border-radius: 2rem;
+}
+
+#titulo {
+    font-family: var(--font1);
+    color: black;
+
     text-align: center;
-
-    padding: 4rem 0 4rem;
-    
-    
 }
+
+#subtitulo {
+    font-family: var(--font1);
+    color: black;
+
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form {
+    font-family: var(--font1);
+}
+
+.campo1 {
+    line-height: 1.5rem;
+}
+
+.campo2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    line-height: 2rem;
+    display: block;
+}
+
+.campo3 {
+    margin-top: 2rem;
+}
+
+.campo label {
+    display: block;
+}
+
+input {
+    padding: 0.2rem;
+}
+
+.campo1 input {
+    width: 100%;
+}
+
+.botao {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cancelar {
+    color: honeydew;
+    background-color: rgba(128, 128, 128, 0.815);
+
+    opacity: 0.6;
+}
+
+.concluir {
+    color: honeydew;
+    background-color: rgba(128, 128, 128, 0.815);
+
+    opacity: 0.6;
+}
+
+button.concluir:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+button.cancelar:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 

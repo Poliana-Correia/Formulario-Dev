@@ -13,10 +13,12 @@
     </header>
 
     <main class="container">
+
         <section>
 
             <div class="frase1">
-                <p class="linha1">Ser desenvolvedor é uma viagem onde a próxima parada é a solução de um problema.</p>
+                <p class="linha1">Ser desenvolvedor é uma viagem onde a próxima <br> 
+                parada é a solução de um problema.</p>
                 <p class="linha2">Thales Valentim</p>
             </div> 
 
@@ -26,17 +28,126 @@
 
         </section>
 
-            <div class="link">
-                <a href="#" class="button new">Cadastre-se</a>
-            </div>
 
-        <section>
-            
+        <section class="link">
+
+            <a href="#" 
+            onclick="Modal.open()" 
+            class="button new">Cadastre-se aqui</a>
+        
+        </section>
+                 
     </main>
+
+    <div class="modal-overlay">
+        <div class="modal">
+           <div class="form">
+               <h2 id="titulo">Cadastro de DEVs</h2>
+               <p id="subtitulo"> <strong>Complete com suas informações</strong></p>
+
+                <form action="">
+                    <div class="campo1">
+                        <div class="campo">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" name="nome" id="nome" size="50" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" size="50" required>
+                        </div>
+                    </div>
+
+                    <div class="campo2 campo">
+                        <label>Em qual stack você atua?</label>
+                        <label>
+                            <input type="radio" name="devweb" value="frontend">frontend
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="backend">backend
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="fullstack">fullstack
+                        </label>
+                    </div>
+
+                    
+
+                    <div class="grupo">
+                        <div>
+                            <label>Selecione as tecnologias que utiliza:</label><br><br>
+                            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                            <label for="tecnologia1">HTML</label>
+
+                            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="HTML">
+                            <label for="tecnologia2">CSS</label>
+
+                            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="HTML">
+                            <label for="tecnologia3">PHP</label>
+
+                            <input type="checkbox" id="tecnologia4" name="tecnologia4" value="HTML">
+                            <label for="tecnologia4">C#</label>
+
+                            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="HTML">
+                            <label for="tecnologia5">Java</label>
+
+                            <input type="checkbox" id="tecnologia6" name="tecnologia6" value="HTML">
+                            <label for="tecnologia6">JavaScript</label>
+
+                            <input type="checkbox" id="tecnologia7" name="tecnologia7" value="HTML">
+                            <label for="tecnologia7">Python</label>    
+                            
+                            <input type="checkbox" id="tecnologia8" name="tecnologia8" value="outros">
+                            <label for="tecnologia8">Outros</label>  
+                        </div>
+
+                    </div>
+
+                    <div class="campo3">
+                        <label for="senioridade">Senioridade</label>
+                        <select id="senioridade">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Junior</option>
+                            <option>Pleno</option>
+                            <option>Senior</option>
+                        </select>
+                    </div>
+
+                    <div class="botao">
+                        <button class="cancelar" onclick="Modal.close()">Cancelar</button>
+                        <button class="concluir">Concluir</button>
+                    </div>
+
+                </form>
+
+           </div>
+        </div>
+    </div>
     
     <footer> 
-            (colocar icones do git e linkedin) - 2022
+        <p><a class="footer" href="https://github.com/Poliana-Correia" target="_blank">Created by Poliana Correia - 2022</a></p> 
+        
     </footer>
+
+    <script>
+        const Modal = {
+        open() {
+            //abrir modal
+            //adicionar a class active ao modal
+            document
+                .querySelector('.modal-overlay')
+                .classList
+                .add('active')
+        },
+        close() {
+            //fechar modal
+            //remover classe active no modal
+            document
+                .querySelector('.modal-overlay')
+                .classList
+                .remove('active')
+        }
+    }
+    </script>
 
 </body>
 </html>
