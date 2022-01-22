@@ -3,19 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap');
 
 
-/* Responsive -------------- 
-@media (min-width: 800px){
-    html {
-        font-size: 100%;
-    }
-} 
-
-.container {
-    width: min(90vw, 800px);
-    margin: auto;
-}*/
-
-
 :root {
     --font1: 'Kanit', sans-serif;
     --font2: 'Courgette', cursive;
@@ -210,5 +197,32 @@ button.cancelar:hover {
     opacity: 1;
     cursor: pointer;
 }
+
+
+/* Responsive -------------- */
+
+@media screen and (max-width: 767px) { 
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-size: auto;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    .linha1 {
+        font-size: 0.8rem;
+    }
+    .linha2 {
+        font-size: 0.5rem;
+    }
+    .linha3, a.button {
+        font-size: 1rem;
+
+    }
+    
+}  
 
 
