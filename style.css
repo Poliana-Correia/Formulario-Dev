@@ -207,20 +207,23 @@ button.cancelar:hover {
         padding: 0;
     }
     body {
-        background-size: auto;
+        background-size: 120% 120%;
     }
     h1 {
         font-size: 1.4rem;
     }
     .linha1 {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .linha2 {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
     .linha3, a.button {
-        font-size: 1rem;
+        font-size: 1.2rem;
 
+    }
+    a.footer {
+        margin-top: 12rem;
     }
     
 }  
