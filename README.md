@@ -1,4 +1,4 @@
 # Formulario-Dev
 
-Repositorio para criação de um formulario de cadastro de pessoas 
-desenvolvedoras, para o desafio da aula de web do Camp Ioasys. 
+Página criada para apresentação de um formulario, para o desafio da aula de web do Camp Ioasys. 
+
