@@ -201,13 +201,13 @@ button.cancelar:hover {
 
 /* Responsive -------------- */
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 800px) { 
     * {
         margin: 0;
         padding: 0;
     }
     body {
-        background-size: 120% 120%;
+        background-size: 150% 121%;
     }
     h1 {
         font-size: 1.4rem;
