@@ -62,7 +62,6 @@ h1 {
 
 a {
     color: rgb(250, 243, 249);
-    text-decoration: none;
 
     font-size: 1.5rem;
     font-family: var(--font1);
@@ -84,6 +83,7 @@ a.footer {
     font-size: 1rem;
     font-family: var(--font3);
 
+    text-decoration: none;
     display: flex; 
     justify-content: center;
     margin-top: 10%;
